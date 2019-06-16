@@ -35,5 +35,18 @@ namespace eosio {
 
     EOSLIB_SERIALIZE( authority, (threshold)(keys)(accounts)(waits) )
   };
+
+  struct block_header {
+    uint32_t                                  timestamp;
+    name                                      producer;
+    uint16_t                                  confirmed = 0;
+    capi_checksum256                          previous;
+    capi_checksum256                          transaction_mroot;
+    capi_checksum256                          action_mroot;
+    uint32_t                                  schedule_version = 0;
+    std::optional<eosio::producer_schedule>   new_producers;
+    EOSLIB_SERIALIZE(block_header, (timestamp)(producer)(confirmed)(previous)(transaction_mroot)(action_mroot)
+                                   (schedule_version)(new_producers))
+  };
 }
 
