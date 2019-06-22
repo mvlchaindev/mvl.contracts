@@ -9,7 +9,7 @@ using namespace eosio;
 namespace mvl {
   using std::string;
 
-  constexpr name active_permission {"active"_n};
+  //constexpr name active_permission {"active"_n};
 
   class [[eosio::contract("mvl.token")]] token : public contract {
     public:
