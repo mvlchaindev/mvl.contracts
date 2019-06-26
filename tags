@@ -1,0 +1,179 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_global	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      global_state_singleton _global;$/;"	m	class:mvl::system_contract
+_gstate	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      mvl_global_state       _gstate;$/;"	m	class:mvl::system_contract
+abi_hash	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      struct [[eosio::table]] abi_hash {$/;"	s	class:mvl::bios
+account	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^      struct [[eosio::table("accounts"), eosio::contract("mvl.token")]] account {$/;"	s	class:mvl::token
+accounts	contracts/libraries/include/mvllib/chain_types.hpp	/^    std::vector<permission_level_weight>  accounts;$/;"	m	struct:eosio::authority
+accounts	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^      typedef multi_index<"accounts"_n, account> accounts;$/;"	t	class:mvl::token
+action_mroot	contracts/libraries/include/mvllib/chain_types.hpp	/^    capi_checksum256                          action_mroot;$/;"	m	struct:eosio::block_header
+active_permission	contracts/libraries/include/mvllib/system.hpp	/^  constexpr name active_permission = "active"_n;$/;"	m	namespace:mvl
+add_balance	contracts/mvl.token/src/mvl.token.cpp	/^  void token::add_balance( name owner, asset value, name ram_payer ) {$/;"	f	class:mvl::token
+authority	contracts/libraries/include/mvllib/chain_types.hpp	/^  struct authority {$/;"	s	namespace:eosio
+balance	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^      asset balance;$/;"	m	struct:mvl::exchange_state::connector
+balance	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^        asset balance;$/;"	m	struct:mvl::token::account
+base	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^    connector base;$/;"	m	struct:mvl::exchange_state
+base_per_transaction_net_usage	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t base_per_transaction_net_usage;$/;"	m	struct:mvl::blockchain_parameters
+bios	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^  class [[eosio::contract("mvl.bios")]] bios : public contract {$/;"	c	namespace:mvl
+block_header	contracts/libraries/include/mvllib/chain_types.hpp	/^  struct block_header {$/;"	s	namespace:eosio
+blockchain_parameters	contracts/libraries/include/mvllib/privileged.hpp	/^   struct blockchain_parameters {$/;"	s	namespace:mvl
+burn	contracts/mvl.token/src/mvl.token.cpp	/^  void token::burn(asset quantity, string memo) {$/;"	f	class:mvl::token
+buyram	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::buyram( name payer, name receiver, asset quant ) {$/;"	f	class:mvl::system_contract
+buyrambytes	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::buyrambytes( name payer, name receiver, uint32_t bytes ) {$/;"	f	class:mvl::system_contract
+canceldelay	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void canceldelay( ignore<permission_level> canceling_auth, ignore<capi_checksum256> trx_id ) {}$/;"	f	class:mvl::bios
+changebw	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::changebw( name from, name receiver,$/;"	f	class:mvl::system_contract
+code_permission	contracts/libraries/include/mvllib/system.hpp	/^  constexpr name code_permission = "mvl.code"_n;$/;"	m	namespace:mvl
+confirmed	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint16_t                                  confirmed = 0;$/;"	m	struct:eosio::block_header
+connector	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^    struct connector {$/;"	s	struct:mvl::exchange_state
+context_free_discount_net_usage_den	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t context_free_discount_net_usage_den;$/;"	m	struct:mvl::blockchain_parameters
+context_free_discount_net_usage_num	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t context_free_discount_net_usage_num;$/;"	m	struct:mvl::blockchain_parameters
+convert	contracts/mvl.system/src/exchange_state.cpp	/^  asset exchange_state::convert( asset from, const symbol& to ) {$/;"	f	class:mvl::exchange_state
+convert_from_exchange	contracts/mvl.system/src/exchange_state.cpp	/^  asset exchange_state::convert_from_exchange( connector& c, asset in ) {$/;"	f	class:mvl::exchange_state
+convert_to_exchange	contracts/mvl.system/src/exchange_state.cpp	/^  asset exchange_state::convert_to_exchange( connector& c, asset in ) {$/;"	f	class:mvl::exchange_state
+core_symbol	contracts/libraries/include/mvllib/system.hpp	/^  constexpr symbol core_symbol = symbol("MVL", 4);$/;"	m	namespace:mvl
+core_symbol	contracts/mvl.system/src/mvl.system.cpp	/^  symbol system_contract::core_symbol()const {$/;"	f	class:mvl::system_contract
+cpu_amount	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    eosio::asset    cpu_amount;$/;"	m	struct:mvl::refund_request	file:
+cpu_weight	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    asset         cpu_weight;$/;"	m	struct:mvl::delegated_bandwidth	file:
+cpu_weight	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    asset         cpu_weight;$/;"	m	struct:mvl::user_resources	file:
+cpu_weight_modifier	contracts/libraries/include/mvllib/privileged.hpp	/^      int64_t cpu_weight_modifier;$/;"	m	struct:mvl::blockchain_parameters
+create	contracts/mvl.token/src/mvl.token.cpp	/^  void token::create( name issuer, asset maximum_supply ) {$/;"	f	class:mvl::token
+currency_stats	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^      struct [[eosio::table("stat"), eosio::contract("mvl.token")]] currency_stats {$/;"	s	class:mvl::token
+deferred_trx_expiration_window	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t deferred_trx_expiration_window;$/;"	m	struct:mvl::blockchain_parameters
+del_bandwidth_table	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  typedef eosio::multi_index< "delband"_n, delegated_bandwidth > del_bandwidth_table;$/;"	t	namespace:mvl	file:
+delegatebw	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::delegatebw( name from, name receiver, asset stake_net_quantity, asset stake_cpu_quantity, bool transfer ) {$/;"	f	class:mvl::system_contract
+delegated_bandwidth	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  struct [[eosio::table, eosio::contract("mvl.system")]] delegated_bandwidth {$/;"	s	namespace:mvl	file:
+deleteauth	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void deleteauth( ignore<name>  account,$/;"	f	class:mvl::bios
+eosio	contracts/libraries/include/mvllib/chain_types.hpp	/^namespace eosio {$/;"	n
+exchange_state	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^  struct [[eosio::table, eosio::contract("mvl.system")]] exchange_state {$/;"	s	namespace:mvl
+free_ram	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    uint64_t free_ram()const { return max_ram_size - total_ram_bytes_reserved; }$/;"	f	struct:mvl::mvl_global_state
+from	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    name          from;$/;"	m	struct:mvl::delegated_bandwidth	file:
+genaccount	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::genaccount(name creator, name name, authority owner, authority active, std::string nickname) {$/;"	f	class:mvl::system_contract
+get_balance	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^      static asset get_balance( name token_contract_account, name owner, symbol_code sym_code ) {$/;"	f	class:mvl::token
+get_blockchain_parameters	contracts/libraries/include/mvllib/privileged.hpp	/^   void get_blockchain_parameters(mvl::blockchain_parameters& params) {$/;"	f	namespace:mvl
+get_core_symbol	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      static symbol get_core_symbol( const rammarket& rm ) {$/;"	f	class:mvl::system_contract
+get_core_symbol	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      static symbol get_core_symbol( name system_account = mvl::system_account ) {$/;"	f	class:mvl::system_contract
+get_default_parameters	contracts/mvl.system/src/mvl.system.cpp	/^  mvl_global_state system_contract::get_default_parameters() {$/;"	f	class:mvl::system_contract
+get_supply	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^      static asset get_supply( name token_contract_account, symbol_code sym_code ) {$/;"	f	class:mvl::token
+hash	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^        capi_checksum256  hash;$/;"	m	struct:mvl::bios::abi_hash
+init	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::init( unsigned_int version, symbol core ) {$/;"	f	class:mvl::system_contract
+issue	contracts/mvl.token/src/mvl.token.cpp	/^  void token::issue(name to, asset quantity, string memo) {$/;"	f	class:mvl::token
+issuer	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^        name    issuer;$/;"	m	struct:mvl::token::currency_stats
+key	contracts/libraries/include/mvllib/chain_types.hpp	/^    eosio::public_key  key;$/;"	m	struct:eosio::key_weight
+key_weight	contracts/libraries/include/mvllib/chain_types.hpp	/^  struct key_weight {$/;"	s	namespace:eosio
+keys	contracts/libraries/include/mvllib/chain_types.hpp	/^    std::vector<key_weight>               keys;$/;"	m	struct:eosio::authority
+last_block_num	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    block_timestamp last_block_num;$/;"	m	struct:mvl::mvl_global_state
+last_ram_increase	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    block_timestamp last_ram_increase;$/;"	m	struct:mvl::mvl_global_state
+linkauth	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void linkauth(  ignore<name>    account,$/;"	f	class:mvl::bios
+max_authority_depth	contracts/libraries/include/mvllib/privileged.hpp	/^      uint16_t max_authority_depth;$/;"	m	struct:mvl::blockchain_parameters
+max_block_cpu_usage	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t max_block_cpu_usage;$/;"	m	struct:mvl::blockchain_parameters
+max_block_net_usage	contracts/libraries/include/mvllib/privileged.hpp	/^      uint64_t max_block_net_usage;$/;"	m	struct:mvl::blockchain_parameters
+max_inline_action_depth	contracts/libraries/include/mvllib/privileged.hpp	/^      uint16_t max_inline_action_depth;$/;"	m	struct:mvl::blockchain_parameters
+max_inline_action_size	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t max_inline_action_size;$/;"	m	struct:mvl::blockchain_parameters
+max_ram_size	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    uint64_t        max_ram_size = 64ll * 1024 * 1024 * 1024; \/\/ 64 GiB$/;"	m	struct:mvl::mvl_global_state
+max_supply	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^        asset   max_supply;$/;"	m	struct:mvl::token::currency_stats
+max_transaction_cpu_usage	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t max_transaction_cpu_usage;$/;"	m	struct:mvl::blockchain_parameters
+max_transaction_delay	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t max_transaction_delay;$/;"	m	struct:mvl::blockchain_parameters
+max_transaction_lifetime	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t max_transaction_lifetime;$/;"	m	struct:mvl::blockchain_parameters
+max_transaction_net_usage	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t max_transaction_net_usage;$/;"	m	struct:mvl::blockchain_parameters
+min_transaction_cpu_usage	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t min_transaction_cpu_usage;$/;"	m	struct:mvl::blockchain_parameters
+mint	contracts/mvl.token/src/mvl.token.cpp	/^  void token::mint(asset maximum_supply) {$/;"	f	class:mvl::token
+mvl	contracts/libraries/include/mvllib/privileged.hpp	/^namespace mvl {$/;"	n
+mvl	contracts/libraries/include/mvllib/system.hpp	/^namespace mvl {$/;"	n
+mvl	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^namespace mvl {$/;"	n
+mvl	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^namespace mvl {$/;"	n
+mvl	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^namespace mvl {$/;"	n
+mvl	contracts/mvl.system/src/delegate_bandwidth.cpp	/^namespace mvl {$/;"	n	file:
+mvl	contracts/mvl.system/src/exchange_state.cpp	/^namespace mvl {$/;"	n	file:
+mvl	contracts/mvl.system/src/mvl.system.cpp	/^namespace mvl {$/;"	n	file:
+mvl	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^namespace mvl {$/;"	n
+mvl	contracts/mvl.token/src/mvl.token.cpp	/^namespace mvl {$/;"	n	file:
+mvl_global_state	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^  struct [[eosio::table("global"), eosio::contract("mvl.system")]] mvl_global_state : mvl::blockchain_parameters {$/;"	s	namespace:mvl
+net_amount	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    eosio::asset    net_amount;$/;"	m	struct:mvl::refund_request	file:
+net_usage_leeway	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t net_usage_leeway;$/;"	m	struct:mvl::blockchain_parameters
+net_weight	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    asset         net_weight;$/;"	m	struct:mvl::delegated_bandwidth	file:
+net_weight	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    asset         net_weight;$/;"	m	struct:mvl::user_resources	file:
+net_weight_modifier	contracts/libraries/include/mvllib/privileged.hpp	/^      int64_t net_weight_modifier;$/;"	m	struct:mvl::blockchain_parameters
+new_producers	contracts/libraries/include/mvllib/chain_types.hpp	/^    std::optional<eosio::producer_schedule>   new_producers;$/;"	m	struct:eosio::block_header
+new_ram_per_block	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    uint16_t        new_ram_per_block = 0;$/;"	m	struct:mvl::mvl_global_state
+newaccount	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void newaccount( name             creator,$/;"	f	class:mvl::bios
+onerror	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void onerror( ignore<uint128_t> sender_id, ignore<std::vector<char>> sent_trx ) {}$/;"	f	class:mvl::bios
+open	contracts/mvl.token/src/mvl.token.cpp	/^  void token::open(name owner, const symbol& symbol, name ram_payer) {$/;"	f	class:mvl::token
+owner	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^        name              owner;$/;"	m	struct:mvl::bios::abi_hash
+owner	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    name            owner;$/;"	m	struct:mvl::refund_request	file:
+owner	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    name          owner;$/;"	m	struct:mvl::user_resources	file:
+owner_permission	contracts/libraries/include/mvllib/system.hpp	/^  constexpr name owner_permission = "owner"_n;$/;"	m	namespace:mvl
+permission	contracts/libraries/include/mvllib/chain_types.hpp	/^    permission_level  permission;$/;"	m	struct:eosio::permission_level_weight
+permission_level_weight	contracts/libraries/include/mvllib/chain_types.hpp	/^  struct permission_level_weight {$/;"	s	namespace:eosio
+previous	contracts/libraries/include/mvllib/chain_types.hpp	/^    capi_checksum256                          previous;$/;"	m	struct:eosio::block_header
+primary_key	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^        uint64_t primary_key()const { return owner.value; }$/;"	f	struct:mvl::bios::abi_hash
+primary_key	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^    uint64_t primary_key()const { return supply.symbol.raw(); }$/;"	f	struct:mvl::exchange_state
+primary_key	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    uint64_t  primary_key()const { return owner.value; }$/;"	f	struct:mvl::refund_request
+primary_key	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    uint64_t  primary_key()const { return to.value; }$/;"	f	struct:mvl::delegated_bandwidth
+primary_key	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    uint64_t primary_key()const { return owner.value; }$/;"	f	struct:mvl::user_resources
+primary_key	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^        uint64_t primary_key()const { return balance.symbol.code().raw(); }$/;"	f	struct:mvl::token::account
+primary_key	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^        uint64_t primary_key()const { return supply.symbol.code().raw(); }$/;"	f	struct:mvl::token::currency_stats
+producer	contracts/libraries/include/mvllib/chain_types.hpp	/^    name                                      producer;$/;"	m	struct:eosio::block_header
+quote	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^    connector quote;$/;"	m	struct:mvl::exchange_state
+ram_bytes	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    int64_t       ram_bytes = 0;$/;"	m	struct:mvl::user_resources	file:
+ram_gift_bytes	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      static int64_t ram_gift_bytes;$/;"	m	class:mvl::system_contract
+ram_symbol	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      static constexpr symbol ram_symbol = symbol(symbol_code("RAM"), 0);$/;"	m	class:mvl::system_contract
+ramcore_symbol	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^      static constexpr symbol ramcore_symbol = symbol(symbol_code("RAMCORE"), 4);$/;"	m	class:mvl::system_contract
+rammarket	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^  typedef eosio::multi_index< "rammarket"_n, exchange_state > rammarket;$/;"	t	namespace:mvl
+real_type	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^  typedef double real_type;$/;"	t	namespace:mvl
+refund	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::refund( const name owner ) {$/;"	f	class:mvl::system_contract
+refund_delay_sec	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  static constexpr uint32_t refund_delay_sec = 3*24*3600;$/;"	m	namespace:mvl	file:
+refund_request	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  struct [[eosio::table, eosio::contract("mvl.system")]] refund_request {$/;"	s	namespace:mvl	file:
+refunds_table	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  typedef eosio::multi_index< "refunds"_n, refund_request >      refunds_table;$/;"	t	namespace:mvl	file:
+reqauth	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void reqauth( name from ) {$/;"	f	class:mvl::bios
+request_time	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    time_point_sec  request_time;$/;"	m	struct:mvl::refund_request	file:
+revision	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    uint8_t         revision = 0;$/;"	m	struct:mvl::mvl_global_state
+schedule_version	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint32_t                                  schedule_version = 0;$/;"	m	struct:eosio::block_header
+sellram	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::sellram( name account, int64_t bytes ) {$/;"	f	class:mvl::system_contract
+set_blockchain_parameters	contracts/libraries/include/mvllib/privileged.hpp	/^   void set_blockchain_parameters(const mvl::blockchain_parameters& params) {$/;"	f	namespace:mvl
+setabi	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setabi( name account, const std::vector<char>& abi ) {$/;"	f	class:mvl::bios
+setalimits	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setalimits( name account, int64_t ram_bytes, int64_t net_weight, int64_t cpu_weight ) {$/;"	f	class:mvl::bios
+setalimits	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::setalimits( name account, int64_t ram, int64_t net, int64_t cpu ) {$/;"	f	class:mvl::system_contract
+setcode	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setcode( name account, uint8_t vmtype, uint8_t vmversion, const std::vector<char>& code ) {}$/;"	f	class:mvl::bios
+setglimits	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setglimits( uint64_t ram, uint64_t net, uint64_t cpu ) {$/;"	f	class:mvl::bios
+setparams	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setparams( const eosio::blockchain_parameters& params ) {$/;"	f	class:mvl::bios
+setparams	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::setparams( const mvl::blockchain_parameters& params ) {$/;"	f	class:mvl::system_contract
+setpriv	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setpriv( name account, uint8_t is_priv ) {$/;"	f	class:mvl::bios
+setpriv	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::setpriv( name account, uint8_t ispriv ) {$/;"	f	class:mvl::system_contract
+setprods	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void setprods( std::vector<eosio::producer_key> schedule ) {$/;"	f	class:mvl::bios
+setram	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::setram( uint64_t max_ram_size ) {$/;"	f	class:mvl::system_contract
+setramgift	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::setramgift(uint8_t kbytes) {$/;"	f	class:mvl::system_contract
+setramrate	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::setramrate( uint16_t bytes_per_block ) {$/;"	f	class:mvl::system_contract
+stats	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^      typedef multi_index<"stat"_n, currency_stats> stats;$/;"	t	class:mvl::token
+sub_balance	contracts/mvl.token/src/mvl.token.cpp	/^  void token::sub_balance(name owner, asset value) {$/;"	f	class:mvl::token
+supply	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^    asset    supply;$/;"	m	struct:mvl::exchange_state
+supply	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^        asset   supply;$/;"	m	struct:mvl::token::currency_stats
+system_contract	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^  class [[eosio::contract("mvl.system")]] system_contract : public contract {$/;"	c	namespace:mvl
+system_contract	contracts/mvl.system/src/mvl.system.cpp	/^  system_contract::system_contract( name s, name code, datastream<const char*> ds )$/;"	f	class:mvl::system_contract
+target_block_cpu_usage_pct	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t target_block_cpu_usage_pct;$/;"	m	struct:mvl::blockchain_parameters
+target_block_net_usage_pct	contracts/libraries/include/mvllib/privileged.hpp	/^      uint32_t target_block_net_usage_pct;$/;"	m	struct:mvl::blockchain_parameters
+threshold	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint32_t threshold = 1;$/;"	m	struct:eosio::authority
+timestamp	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint32_t                                  timestamp;$/;"	m	struct:eosio::block_header
+to	contracts/mvl.system/src/delegate_bandwidth.cpp	/^    name          to;$/;"	m	struct:mvl::delegated_bandwidth	file:
+token	contracts/mvl.token/include/mvl.token/mvl.token.hpp	/^  class [[eosio::contract("mvl.token")]] token : public contract {$/;"	c	namespace:mvl
+total_ram_bytes_reserved	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    uint64_t        total_ram_bytes_reserved = 0;$/;"	m	struct:mvl::mvl_global_state
+total_ram_stake	contracts/mvl.system/include/mvl.system/mvl.system.hpp	/^    int64_t         total_ram_stake = 0;$/;"	m	struct:mvl::mvl_global_state
+transaction_mroot	contracts/libraries/include/mvllib/chain_types.hpp	/^    capi_checksum256                          transaction_mroot;$/;"	m	struct:eosio::block_header
+transfer	contracts/mvl.token/src/mvl.token.cpp	/^  void token::transfer(name from, name to, asset quantity, string memo) {$/;"	f	class:mvl::token
+undelegatebw	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  void system_contract::undelegatebw( name from, name receiver,asset unstake_net_quantity, asset unstake_cpu_quantity ) {$/;"	f	class:mvl::system_contract
+unlinkauth	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void unlinkauth( ignore<name>  account,$/;"	f	class:mvl::bios
+update_ram_supply	contracts/mvl.system/src/mvl.system.cpp	/^  void system_contract::update_ram_supply() {$/;"	f	class:mvl::system_contract
+updateauth	contracts/mvl.bios/include/mvl.bios/mvl.bios.hpp	/^      void updateauth(  ignore<name>  account,$/;"	f	class:mvl::bios
+user_resources	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  struct [[eosio::table, eosio::contract("mvl.system")]] user_resources {$/;"	s	namespace:mvl	file:
+user_resources_table	contracts/mvl.system/src/delegate_bandwidth.cpp	/^  typedef eosio::multi_index< "userres"_n, user_resources >      user_resources_table;$/;"	t	namespace:mvl	file:
+wait_sec	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint32_t           wait_sec;$/;"	m	struct:eosio::wait_weight
+wait_weight	contracts/libraries/include/mvllib/chain_types.hpp	/^  struct wait_weight {$/;"	s	namespace:eosio
+waits	contracts/libraries/include/mvllib/chain_types.hpp	/^    std::vector<wait_weight>              waits;$/;"	m	struct:eosio::authority
+weight	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint16_t           weight;$/;"	m	struct:eosio::key_weight
+weight	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint16_t           weight;$/;"	m	struct:eosio::wait_weight
+weight	contracts/libraries/include/mvllib/chain_types.hpp	/^    uint16_t          weight;$/;"	m	struct:eosio::permission_level_weight
+weight	contracts/mvl.system/include/mvl.system/exchange_state.hpp	/^      double weight = .5;$/;"	m	struct:mvl::exchange_state::connector
+~system_contract	contracts/mvl.system/src/mvl.system.cpp	/^  system_contract::~system_contract() {$/;"	f	class:mvl::system_contract
